@@ -11,9 +11,6 @@ func main () {
 
 	configs.ConnectDB()
 
-	routes.AdministratorRoute(app)
 	routes.CitizenRoute(app)
-	routes.RequestRoute(app)
-
 	app.Listen(":8080")
 }
